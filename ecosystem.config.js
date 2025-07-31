@@ -42,6 +42,15 @@ module.exports = {
       script : 'cmd',
       args   : '/c timeout /t 12 & uv run run_server.py',
       windowsHide : false
+    },
+
+    /* ───────────── Solutions Site Server ──────── */
+    {
+      name   : 'Solutions Sites',
+      cwd    : 'C:/_projects/tmo-solutions-web',
+      script : 'cmd',
+      args   : '/c npm run serve',
+      windowsHide : false
     }
   ]
 };

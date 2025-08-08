@@ -69,5 +69,14 @@ module.exports = {
       args   : '/c yarn start',
       windowsHide : false
     },
+
+    /* ───────────── Badge Site ──────── */
+    {
+      name   : 'Badge Site',
+      cwd    : 'C:/_projects/tmo-badge-site-web',
+      script : 'cmd',
+      args   : '/c yarn start',
+      windowsHide : false
+    },
   ]
 };

@@ -51,6 +51,23 @@ module.exports = {
       script : 'cmd',
       args   : '/c npm run serve',
       windowsHide : false
-    }
+    },
+
+    /* ───────────── Network Wall Map Server ────────*/
+		{
+      name: 'Network Map Server',
+      cwd: 'C:/_projects/Regional-Builds/TMO-EBC-Install/Network-Map-Server',
+      interpreter: "node",
+      script: "server.js"
+    },
+
+    /* ───────────── Coffee Frontend ──────── */
+    {
+      name   : 'Coffee Frontend',
+      cwd    : 'C:/_projects/tmo-coffee-web',
+      script : 'cmd',
+      args   : '/c yarn start',
+      windowsHide : false
+    },
   ]
 };

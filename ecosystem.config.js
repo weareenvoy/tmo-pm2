@@ -45,14 +45,14 @@ module.exports = {
 },
 
 
-    /* ───────────── Solutions Site Server ──────── */
-    {
-      name   : 'Solutions Sites',
-      cwd    : 'C:/_projects/tmo-solutions-web',
-      script : 'cmd',
-      args   : '/c npm run serve',
-      windowsHide : true
-    },
+      /* ───────────── Solutions Site Server ──────── */
+      {
+        name   : 'Solutions Sites',
+        cwd    : 'C:/_projects/tmo-solutions-web',
+        script : 'cmd',
+        args   : '/c serve dist -p 5173',
+        windowsHide : false
+      },
 
     /* ───────────── Network Wall Map Server ────────*/
 		{

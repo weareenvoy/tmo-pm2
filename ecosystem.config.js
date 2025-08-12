@@ -35,14 +35,15 @@ module.exports = {
       windowsHide : true
     },
 
-    /* ───────────── GEC Server ──────── */
-    {
-      name   : 'GEC Server',
-      cwd    : 'C:/_projects/TMO-Docent-App-Schema',
-      script : 'cmd',
-      args   : '/c timeout /t 12 & uv run run_server.py',
-      windowsHide : false
-    },
+/* ───────────── GEC Server ──────── */
+{
+  name: 'GEC Server',
+  cwd: 'C:/_projects/TMO-Docent-App-Schema',
+  script: 'cmd',
+  args: '/c powershell -NoLogo -NoProfile -ExecutionPolicy Bypass -Command "$h=\'127.0.0.1\'; $p=800; Write-Host \'[GEC] Waiting for Strapi Middleman on port\' $p \'...\'; while (-not (Test-NetConnection $h -Port $p -InformationLevel Quiet)) { Start-Sleep -Milliseconds 500 }; Write-Host \'[GEC] Strapi Middleman detected — starting GEC Server\'; uv run run_server.py"',
+  windowsHide: false
+},
+
 
     /* ───────────── Solutions Site Server ──────── */
     {

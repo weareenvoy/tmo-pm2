@@ -32,7 +32,7 @@ module.exports = {
       cwd    : 'C:/_projects/tmo-docent-web',
       script : 'cmd',
       args   : '/c yarn start',
-      windowsHide : false
+      windowsHide : true
     },
 
     /* ───────────── GEC Server ──────── */
@@ -50,7 +50,7 @@ module.exports = {
       cwd    : 'C:/_projects/tmo-solutions-web',
       script : 'cmd',
       args   : '/c npm run serve',
-      windowsHide : false
+      windowsHide : true
     },
 
     /* ───────────── Network Wall Map Server ────────*/
@@ -58,7 +58,8 @@ module.exports = {
       name: 'Network Map Server',
       cwd: 'C:/_projects/Regional-Builds/TMO-EBC-Install/Network-Map-Server',
       interpreter: "node",
-      script: "server.js"
+      script: "server.js",
+      windowsHide : true
     },
 
     /* ───────────── Coffee Frontend ──────── */
@@ -66,8 +67,8 @@ module.exports = {
       name   : 'Coffee Frontend',
       cwd    : 'C:/_projects/tmo-coffee-web',
       script : 'cmd',
-      args   : '/c yarn start',
-      windowsHide : false
+      args   : 'yarn start',
+      windowsHide : true
     },
 
     /* ───────────── Badge Site ──────── */
@@ -76,7 +77,16 @@ module.exports = {
       cwd    : 'C:/_projects/tmo-badge-site-web',
       script : 'cmd',
       args   : '/c yarn start',
-      windowsHide : false
+      windowsHide : true
+    },
+
+    /* ───────────── CI Web ──────── */
+    {
+      name   : 'Connected Individual Web',
+      cwd    : 'C:/_projects/tmo-connected-individual-web',
+      script : 'cmd',
+      args   : '/c yarn run start',
+      windowsHide : true
     },
   ]
 };
